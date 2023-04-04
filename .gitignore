@@ -1,0 +1,7 @@
+# Environment
+venv/
+
+# IDE
+*.iml
+.idea/
+__pycache__/
