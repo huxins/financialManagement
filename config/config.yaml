@@ -1,0 +1,13 @@
+COMMON: &common
+  # 响应消息
+  RESPONSE_MESSAGE: ./config/msg.yaml
+  # JWT
+  JWT_SECRET_KEY: 'aGd9fJIs'
+
+DEVELOPMENT:
+  <<: *common
+  # 数据库连接
+  SQLALCHEMY_DATABASE_URI: ''
+
+PRODUCTION:
+  <<: *common
