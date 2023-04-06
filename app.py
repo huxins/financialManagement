@@ -1,8 +1,4 @@
-from flask import Flask
+from sqlalchemy.orm import registry, DeclarativeBase
 
-app = Flask(__name__)
-
-
-@app.route("/")
-def hello_world():
-    return "Hello, World!"
+mapper_registry = registry()
+Base = mapper_registry.generate_base()
